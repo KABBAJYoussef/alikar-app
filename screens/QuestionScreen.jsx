@@ -43,8 +43,10 @@ const QuestionScreen = () => {
   const generateQuestion = () => {
     if (question + 1 <= questions.length - 1) {
       if (time === 0) {
-        if (questions[question].answers[selectedResponse].correct)
-          setCorrectAnswers(correctAnswers + 1);
+        if (selectedResponse !== -1) {
+          if (questions[question].answers[selectedResponse].correct)
+            setCorrectAnswers(correctAnswers + 1);
+        }
         setQuestion(question + 1);
         setSelectedResponse(-1);
       } else {
