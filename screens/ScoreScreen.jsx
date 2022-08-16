@@ -1,7 +1,8 @@
-import { View, Text, TouchableOpacity, SafeAreaView } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import React, { useLayoutEffect } from "react";
 import Header from "../components/Header";
 import { useNavigation, useRoute } from "@react-navigation/native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 const ScoreScreen = () => {
   const navigation = useNavigation();

@@ -29,7 +29,7 @@ const QUESTIONS = [
     ],
     label:
       "Dans quel pays peut-on trouver la Catalogne, l'Andalousie et la Castille ?",
-    time: 5,
+    time: 30,
   },
   {
     id: 2,
@@ -47,7 +47,6 @@ const QUESTIONS = [
         correct: false,
       },
     ],
-    image: null,
     label: "Qui a dit : << Le sort en est jeté >> (Alea jacta est) ?",
     time: 60,
   },
